@@ -1,5 +1,6 @@
 /* CSS Document */
 
+
 /*----For responsive youtube embedding----*/
 
 .videowrapper {
@@ -18,6 +19,8 @@
     width: 100%;
     height: 100%;
 }
+/*----For placing videos in center----*/
+
 body {
 	background: #393f4d;
 	/*(default background color for the entire page)*/
@@ -339,7 +342,7 @@ article {
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 20px;
-	border-top: 4px solid #020202;
+	border-top: 2px solid #d2d4dd;
 	margin-top: -7px;
 	background-color: 393f4d
 }
