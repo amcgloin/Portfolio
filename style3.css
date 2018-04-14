@@ -21,6 +21,11 @@
 }
 /*----For placing videos in center----*/
 
+.video{
+    display: block;
+    margin: 0 auto;
+}
+
 body {
 	background: #393f4d;
 	/*(default background color for the entire page)*/
