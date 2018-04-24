@@ -445,8 +445,9 @@ filter: alpha(opacity=70)
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    min-height: 1px;
+    min-height: 120px;
     text-align: right
+	    
 }
 
 /*----------------Triptych-----------------*/
