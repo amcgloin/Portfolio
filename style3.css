@@ -1,5 +1,16 @@
 /* CSS Document */
 
+/*-----twitter embeds------*/
+.twitterembed {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.tembeddiv {
+    display: inline-block
+}
 
 /*----For responsive youtube embedding----*/
 
