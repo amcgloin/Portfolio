@@ -1,4 +1,15 @@
 /* CSS Document */
+*-----photo cover---------*/
+.photocover{
+    color: #d2d4dd;
+    text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
+}
+
+.covertext{
+    color: #d2d4dd;
+    size: 10000px;
+    text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
+}
 
 /*-----twitter embeds------*/
 .twitterembed {
