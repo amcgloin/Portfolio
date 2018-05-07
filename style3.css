@@ -2,6 +2,48 @@
 
 /* Colors for Reference: dark #393f4d, off-white #d2d4dd, yellow #fdd86b */
 
+
+/*-----photo captions---------*/
+/* Container holding the image and the text */
+.captioncontainer {
+    position: relative;
+    text-align: left: ;
+}
+
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
+    font-size: .70em;
+    bottom: 6%;
+    left: 6%;
+}
+
+.capaltyellow{
+   color: #fdd86b;
+}
+
+.capaltdark{
+    color: black;
+    text-shadow: none;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1000000000){
+    .bottom-left{
+        bottom: 0%;
+        left: 0%;
+    }
+}
+    
 /*-----photo cover---------*/
 .photocover{
     color: #d2d4dd;
@@ -12,6 +54,25 @@
     color: #d2d4dd;
     size: 10000px;
     text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
+}
+
+
+
+
+/*-----photo page---------*/
+.photopagecover{
+    max-width: 100px;
+}
+
+@media only screen and (max-width: 1290px) {
+  .photopagecover {
+    padding-top: 190px;
+  }
+}
+
+.tallphotos{
+    min-height: 100%;
+    
 }
 
 /*-----twitter embeds------*/
@@ -216,7 +277,7 @@ body {
 /*----Prevents photos from shifting------*/
 
 .photos {
-	min-height: 300px;
+	min-height: 350px;
 }
 /*----------------navigation section-----------------*/
 
