@@ -1,7 +1,12 @@
 /* CSS Document */
 
 /* Colors for Reference: dark #393f4d, off-white #d2d4dd, yellow #fdd86b */
-
+/*-----Hides profile on larger screens---------*/
+@media only screen and (min-width: 600px){
+    .profilehide{
+        display: none;
+    }
+}
 
 /*-----photo captions---------*/
 /* Container holding the image and the text */
