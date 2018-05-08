@@ -1,18 +1,19 @@
 /* CSS Document */
 
 /* Colors for Reference: dark #393f4d, off-white #d2d4dd, yellow #fdd86b */
-/*-----Hides profile on larger screens---------*/
+
+/*-----Hides small profile on larger screens---------*/
 @media only screen and (min-width: 600px){
     .profilehide{
         display: none;
     }
 }
-
 /*-----photo captions---------*/
 /* Container holding the image and the text */
 .captioncontainer {
     position: relative;
     text-align: left: ;
+    opacity: ;
 }
 
 
@@ -23,6 +24,8 @@
     font-size: .70em;
     bottom: 6%;
     left: 6%;
+    
+    opacity: .;
 }
 
 .capaltyellow{
@@ -52,16 +55,20 @@
 /*-----photo cover---------*/
 .photocover{
     color: #d2d4dd;
-    text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
+    text-shadow: -2px 0 #393f4d, 0 2px #393f4d, 2px 0 #393f4d, 0 -2px #393f4d;
+    font-size: 8vw
 }
 
 .covertext{
     color: #d2d4dd;
-    size: 10000px;
-    text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
+    size: 10vw;
+    text-shadow: -1.5px 0 #393f4d, 0 1.5px #393f4d, 1.5px 0 #393f4d, 0 -1.5px #393f4d;
+    
 }
 
-
+.mainportfoliophoto{
+    opacity: .;
+}
 
 
 /*-----photo page---------*/
@@ -589,14 +596,27 @@ h1 {
 	font-family: "Cormorant Garamond", "Garamond", "serif";
 	color: #fdd86b;
 	padding-left: 10px
+	font-size: 2em;
+	/* 2x body copy size = 32px */
+	line-height: 1.25;
+	/* 45px / 36px */
 }
 h2 {
 	font-family: "Cormorant Garamond", "Garamond", "serif";
 	color: #fdd86b;
+	font-size: 1.625em;
+	/* 1.625x body copy size = 26px */
+	line-height: 1.15384615;
+	/* 30px / 26px */
+	height: 2rem;
 }
 h3 {
 	font-family: "Cormorant Garamond", "Garamond", "serif";
 	color: #d2d4dd;
+    font-size: 1.375em;
+	/* 1.375x body copy size = 22px */
+	line-height: 1.13636364;
+	/* 25px / 22px */
 }
 h4 {
 	font-family: "Cormorant Garamond", "Garamond", "serif";
@@ -632,12 +652,7 @@ body, h1, h2, h3, h4, h5, h6 {
 		/* equivalent to 22px */
 	}
 }
-h1 {
-	font-size: 2em;
-	/* 2x body copy size = 32px */
-	line-height: 1.25;
-	/* 45px / 36px */
-}
+
 @media (min-width: 43.75em) {
 	h1 {
 		font-size: 2.5em;
@@ -654,12 +669,7 @@ h1 {
     and something more appropriate for display headings */
 	}
 }
-h2 {
-	font-size: 1.625em;
-	/* 1.625x body copy size = 26px */
-	line-height: 1.15384615;
-	/* 30px / 26px */
-}
+
 @media (min-width: 43.75em) {
 	h2 {
 		font-size: 2em;
@@ -674,12 +684,7 @@ h2 {
 		line-height: 1.25;
 	}
 }
-h3 {
-	font-size: 1.375em;
-	/* 1.375x body copy size = 22px */
-	line-height: 1.13636364;
-	/* 25px / 22px */
-}
+
 @media (min-width: 43.75em) {
 	h3 {
 		font-size: 1.5em;
@@ -837,9 +842,7 @@ h3 {
 .items-center {
 	align-items: center;
 }
-.h2 {
-	height: 2rem;
-}
+
 .link {
 	text-decoration: none;
 	transition: color .15s ease-in;
@@ -1029,12 +1032,7 @@ h3 {
 .flex-column {
 	flex-direction: column;
 }
-.avenir {
-	font-family: 'avenir next', avenir, sans-serif;
-}
-.baskerville {
-	font-family: baskerville, serif;
-}
+
 .fw1 {
 	font-weight: 100;
 }
