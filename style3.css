@@ -608,12 +608,11 @@ h2 {
 	/* 1.625x body copy size = 26px */
 	line-height: 1.15384615;
 	/* 30px / 26px */
-	height: 2rem;
 }
 h3 {
 	font-family: "Cormorant Garamond", "Garamond", "serif";
 	color: #d2d4dd;
-    font-size: 1.375em;
+ 	font-size: 1.375em;
 	/* 1.375x body copy size = 22px */
 	line-height: 1.13636364;
 	/* 25px / 22px */
