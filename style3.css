@@ -17,14 +17,14 @@
 }
 
 
+
 /* Bottom left text */
 .bottom-left {
     position: absolute;
     text-shadow: -1px 0 #393f4d, 0 1px #393f4d, 1px 0 #393f4d, 0 -1px #393f4d;
-    font-size: .70em;
+    font-size: 1em;
     bottom: 6%;
     left: 6%;
-    
     opacity: .;
 }
 
