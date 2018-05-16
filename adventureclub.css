@@ -60,10 +60,8 @@
 }
 
 .covertext{
-    color: #4a3a32;
+    color: #ece8d2;
     size: 10vw;
-
-    
 }
 
 .mainportfoliophoto{
@@ -311,7 +309,7 @@ body {
 	/*(image logo position)*/
 	border-bottom: thin solid #ece8d2;
 	/*(border under nav bar)*/
-    background-image: url("img/logo2.png"); /*(image logo)*/
+    background-image: url("img/aclublogo2.png"); /*(image logo)*/
     font-family: "Cormorant Garamond", "Garamond", "serif";
 }
 
