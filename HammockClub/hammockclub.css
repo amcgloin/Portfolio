@@ -2,6 +2,12 @@
 
 /* Colors for Reference: beige #ece8d2, green #50643a, brown #4a3a32, blue #2d303e */
 
+
+/*----------------profile card-----------------*/
+.profilecard{
+    vertical-align: text-top
+}
+
 /*----------------navigation section-----------------*/
 
 .navigation {
@@ -298,6 +304,9 @@ a.text:hover, a.text:active {
     display: block;
     align-content: center;
     margin: auto;
+}
+article{
+    max-width: 100%;
 }
 
 /*----For placing videos in center----*/
