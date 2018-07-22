@@ -1,42 +1,34 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-	
 <head>
-	
-<!--The following displays language used in browser to interpret page -->
-<meta charset="UTF-8">
+	<!--The following displays language used in browser to interpret page -->
+	<meta charset="UTF-8"><!--The following line of code displays the page title on a browser tab -->
+	<title>Aidan McGloin | Multimedia Journalist, Photographer, Designer, Reporter</title><!--link tags are for linking to external files, in this case your CSS stylesheet-->
+	<link href="style3.css" rel="stylesheet" type="text/css"><!--link tags are for linking to external files, in this case a special CSS stylesheet-->
+	<link href="normalize.css" rel="stylesheet" type="text/css"><!--the following tag tells the browser to adjust the site according to screen size-->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"><!--The following code links to the jquery library -->
 
-<!--The following line of code displays the page title on a browser tab -->
-<title>Aidan McGloin | Multimedia Journalist, Photographer, Designer, Reporter</title>
-
-<!--link tags are for linking to external files, in this case your CSS stylesheet-->
-<link href="style3.css" rel="stylesheet" type="text/css">
-	
-<!--link tags are for linking to external files, in this case a special CSS stylesheet-->
-<link href="normalize.css" rel="stylesheet" type="text/css">
-
-<!--the following tag tells the browser to adjust the site according to screen size-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--The following code links to the jquery library -->
-<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	
-<!--The following code is for the slideshow -->	
-<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
-	
-<!--The following code links to Google Fonts-->
-<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="js/jquery-2.1.1.min.js" type="text/javascript">
+	</script><!--The following code is for the slideshow -->
+	<script src="js/jquery.cycle2.min.js" type="text/javascript">
+	</script><!--The following code links to Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!---Tachyons   =-->
+	<link href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" rel="stylesheet">
     
-<!---Tachyons---> 
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
+    <!--The following javscript runs the jquery slideshow -->
+
+	<script type="text/javascript">
+	$('#slider').cycle({});
+	</script>
     
-<!--The following javscript runs the jquery slideshow -->
-<script type="text/javascript">
-$('#slider').cycle({});
-</script>
-<!---The following sets up the favicons--->
+    <!----Fancybox---->
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>    
+ <!---The following sets up the favicons--->
 <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-icon-72x72.png">
@@ -53,46 +45,92 @@ $('#slider').cycle({});
 <link rel="manifest" href="/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="img/fav/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#ffffff">   
     
-</head>
-<body>
-<!--beginning of navigation section-->
-<section class="navigation">
-<div class="nav-container">
-<div class="brand"> AIDAN MCGLOIN</div>
-<nav>
-<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-  <ul class="nav-list">
-        <li>
-          <a href="home.html">Home</a>
-        </li>
-	   <li>
-          <a href="articles.html">Articles</a>
-		  </li>
-	  	<li>
-          <a href="photos.html">Photos</a>
-        </li>
-        <li>
-          <a href="resume.html">Resume</a>
-			</li>
-        <li>
-          <a href="multimedia.html">Multimedia</a>
-        </li>
-      </ul>
-</nav>
-</div>
-<!--closing navigation tag-->
-</section>
-<!--end of navigation section-->
-<br><br><br><br>
 
+    </head>
     
-<!---The following sets up the media for my stories--->
-    <div class="row">
-<section class="center ">
-    <h1 id="stories" class=no-underline>Articles</h1>
-    		    <article>
+<!--beginning of navigation section-->
+<body>
+	<section class="navigation">
+		<div class="nav-container">
+			<div class="brand">
+				AIDAN MCGLOIN
+			</div>
+			<nav>
+				<div class="nav-mobile">
+					<a href="#!" id="nav-toggle"><span></span></a>
+				</div>
+				<ul class="nav-list">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="articles.html">Articles</a>
+					</li>
+					<li>
+						<a href="photos.html">Photos</a>
+					</li>
+					<li>
+						<a href=".html">Resume</a>
+					</li>
+					<li>
+						<a href="multimedia.html">Multimedia</a>
+					</li>
+				</ul>
+			</nav>
+		</div><!--closing navigation tag-->
+	</section><!--end of navigation section-->
+	  		<br>
+		<br>
+		<br>
+
+  <div class="vh-100 dt w-100 tc bg-dark-gray cover" style="background:url(https://images.fok.al/content/BVPRADmQIgWp?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max) no-repeat center;">
+    <div class="dtc v-mid">
+      <header>
+        <h2 class="f6 fw1 ttu tracked mb2 lh-title covertext"></h2>
+        <h3 class=" lh-title covertext">Aidan McGloin</h3>
+      </header>
+      <h1 class="f1 f-headline-l fw1 i photocover">Portfolio</h1>
+      <blockquote class="ph0 mh0 measure f4 lh-copy center">
+        <p class="fw1 covertext">
+          
+        </p>
+        <cite class="f6 ttu tracked fs-normal covertext"></cite>
+      </blockquote>
+    </div>
+  </div>
+
+
+
+	<br>
+	<div class="topdiv">
+		<!--Full Bleed Background-->
+		<article data-name="article-full-bleed-background">
+			<div class="cf" style="background: url(https://images.fok.al/content/IZJWJgvXBHNV?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max) no-repeat center center fixed; background-size: cover;">
+				<div class="fr pa3 pa4-ns bg-grey measure-narrow f3">
+					<header class="bb pv4">
+						<h2 class="f2 fw7 ttu tracked lh-title mt0 mb3">Welcome to my site</h2>
+						<h4 class="f3 fw4 i lh-title mt0">Writings, photos, videos</h4>
+                        <div class="profilehide"><img class="profilehide" src="https://images.fok.al/content/IZJWJgvXBHNV?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max"></div>
+					</header>
+					<section class="pt5 pb4">
+						<p class="lh-copy measure f4 mt0">I hope you see how I fit into your workspace. I built this site as a side project after learning CSS and HTML from Brady Teufel at Cal Poly, San Luis Obispo. Components have been borrowed from Tachyons.io, and fancybox3.<br>
+						<br>
+						I am a journalism major at Cal Poly, where I have written for the student newspaper for past two years and learned photojournalism, After Effects, Premiere, InDesign and Illustrator.<br>
+						<br>
+						I hope you enjoy my work, and that this site shows you what I can contribute to your team.<br>
+						<br>
+						Stay connected through the platforms I linked to at the bottom.</p>
+					</section>
+				</div>
+			</div>
+		</article>
+	</div>
+    <!---The following sets up the media for my stories=-->
+	<section class="row center">
+        <h1 class="no-underline" id="stories"><a class="h1link no-underline dim" href="articles.html">Articles</a></h1>
+   		    <article>
     <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/rate-of-administrative-hires-decreases-but-tenure-track-faculty-still-down-from-pre-recession-levels/">
       <div class="flex flex-column flex-row-ns">
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
@@ -142,249 +180,65 @@ $('#slider').cycle({});
         </div>
       </div>
     </a>
-     </article>    
-		    <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/face-off-over-budget-may-leave-cal-poly-with-limited-funds/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="https://images.fok.al/content/lAKfIZQdELPo?auto=format&dpr=1&fm=pjpg&crop=faces&fit=crop&w=1500&h=1000" class="db" alt="CSU students protested in Sacramento for increased funding in March.">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Face-off over budget may leave Cal Poly with limited funds</h1>
-          <p>
-            Cal Poly faces a budget crisis. Inflation is rising, and the entire California State University System needs more money to combat it. It may not be coming, and the campus may have to cut costs, either in the number of classes offered or in services and grants administration provides.
-          </p>
-          <p class="f6 lh-copy mv0">May 22, 2018</p>
-        </div>
-      </div>
-    </a>
      </article>
-     <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/california-law-prohibits-expulsion-of-former-lambda-chi-alpha-member/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2014/10/Capitol-1-of-1-FOR-WEB.png" class="db" alt="The state capitol, Mustang News file photo">
-            <div><p>File photo | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">California law prohibits expulsion of former Lambda Chi Alpha member</h1>
-          <p>
-            Cal Poly President Jeffrey Armstrong cannot legally expel former Lambda Chi Alpha member Kyler Watkins. Community members called for his expulsion after a picture of him surfaced on social media wearing blackface at a fraternity brotherhood event earlier this month.
-          </p>
-          <p class="f6 lh-copy mv0">April 30, 2018</p>
-        </div>
-      </div>
-    </a>
-     </article>
-     <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/inside-the-fake-news-forum/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="img/fakenewsforum.jpg" class="db" alt="Left to right: Sargon of Akkad, Milo Yiannopolous, Laura Loomer, and Flecas. Aidan McGloin">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Conservative speakers clash inside controversial Fake News Panel</h1>
-          <p>
-            The April 26 Fake News Panel discussed propaganda in democracy, Islamophobia and suppressing free speech in the heavily protected Mott Athletic Center. 
-          </p>
-          <p class="f6 lh-copy mv0">April 27, 2018</p>
-        </div>
-      </div>
-    </a>
-     </article>
-     <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/water-conservation-still-important-despite-reduced-drought-conditions/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="img/YearlyPrecipitation.png" class="db" alt="Rainfall is down, but after last year's rain our reservoir is still full">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Water conservation still important, despite reduced drought conditions</h1>
-          <p>
-            No, San Luis Obispo is not still in a drought, according to the man in charge of Cal Poly’s water. No, that does not mean San Luis Obispo should waste water, he added.
-          </p>
-          <p class="f6 lh-copy mv0">April 19, 2018</p>
-        </div>
-      </div>
-    </a>
-     </article>
-        <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/footage-of-san-luis-obispo-county-jail-inmate-death-prompts-protests/">  
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2018/03/DSC04041-1024x686.jpg" class="db" alt="Moore walks around with a sign to gain interest and signature">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Footage of San Luis Obispo County Jail inmate death prompts protests</h1>
-          <p>
-            San Luis Obispo community members continue to protest in response to footage of the death of former San Luis Obispo County Jail inmate Andrew Holland.
-          </p>
-          <p class="f6 lh-copy mv0">March 20, 2018</p>
-        </div>
-      </div>
-    </a>
-     </article>
-    
-    <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/students-act-prohibit-onshore-drilling/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2018/03/DSC03888-768x514.jpg" class="db" alt="Moore walks around with a sign to gain interest and signature">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Frack off: Students against onshore drilling</h1>
-          <p>
-            A group of Cal Poly students are collecting signatures to support an initiative that would prevent the expansion of oil drills in Price Canyon in San Luis Obispo County. They argue that the injection wells contaminate the aquifer that runs underneath the field and flows into the ocean, and expanding oil drilling is not necessary.
-          </p>
-          <p class="f6 lh-copy mv0">March 6, 2018</p>
-        </div>
-      </div>
-    </a>
-     </article>
-  
-   <article>
-        <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/students-learn-coding-24-hour-creative-spree/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2018/02/DSC03854-1147x768.jpg" class="db" alt="After the opening ceremony, participants had 24 hours to build anything of their choosing. Aidan McGloin">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Students learn coding in 24-hour creative spree</h1>
-          <p>
-           In a push to create, learn and compete, students built augmented maps of Cal Poly, tools to help the paralyzed browse the web and ride-share expense trackers over the 24 hours of SLO Hacks.
-          </p>
-          <p class="f6 lh-copy mv0">February 11, 2018</p>
-        </div>
-      </div>
-    </a>
-    </article>    
-     <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/local-state-federal-governments-square-offshore-drilling/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2018/01/Refugio_Oil_Spill_in_Santa_Barbara.jpg" class="db" alt="The 2015 Refugio Oil Spill dumped nearly 143,000 gallons of oil into the Pacific Ocean. Refugio Oil Spill in Santa Barbara | Creative Commons">
-            <div><p>Refugio Oil Spill in Santa Barbara | Creative Commons</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Local, state and federal governments square up over offshore drilling</h1>
-          <p>
-          As the federal government proposes selling land off the California Central Coast to oil drilling companies, San Luis Obispo joins a coalition of coastal cities and state senators in opposition.
-          </p>
-          <p class="f6 lh-copy mv0">January 16, 2018</p>
-        </div>
-      </div>
-    </a>
-       </article>
-        <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/wildfires-affect-cal-poly-students/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2017/10/IMG_7250-copy-1152x768.jpg" class="db" alt="Fountain Grove Inn and Steakhouse at Equus, Santa Rosa. Lisa Phillippi | Courtesy Photo">
-            <div><p>Lisa Phillippi | Courtesy Photo</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">Wildfires affect Cal Poly students</h1>
-          <p>
-           As the Northern California fires destroy neighborhoods and force evacuations, some Cal Poly students are among those affected.<br><br>CalFire says it responded to 250 new wildfires  between Oct. 8 and 20 which  burned over 245,000 acres, forced the evacuations of 100,000 residents and took the lives of 42 people.
-          </p>
-          <p class="f6 lh-copy mv0">October 24, 2017</p>
-        </div>
-      </div>
-    </a>
-       </article>
-    
-    
-        <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/2017-annual-security-report-shows-upward-trend-reports-sex-crimes-since-2011/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2017/10/IMG_5716-768x512.jpg" class="db" alt="Jake Douglas / Mustang News">
-            <div><p>Jake Douglas | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-          <h1 class="f3 lh-title">2017 Annual Security Report shows upward trend in reports of sex crimes since 2011</h1>
-          <p>
-           The 2017 Annual Security Report showed an increase in reported rape from last year, contributing to an upward trend in reported sex crimes since 2011.
-          </p>
-          <p class="f6 lh-copy mv0">October 10, 2017</p>
-        </div>
-      </div>
-    </a>
-       </article>
- <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/161777-2/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2017/10/ViticultureLabEdited-768x429.jpg" class="db" alt="Wine and viticulture senior Patricia Williams. Aidan McGloin | Mustang News">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-            <h1 class="f3 lh-title">New Wine and Viticulture lab impacts field at large</h1><p>The Cal Poly wine and viticulture lab is nestled in a hallway next to Campus Market, with a light brown door, and a clinical and professional interior. It is run by Dr. Federico Casassa who— alongside students— does research on wine taste and fermentation.
-          </p>
-          <p class="f6 lh-copy mv0">October 10, 2017</p>
-        </div>
-      </div>
-    </a>
-       </article>
-    
- <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/csu-audit-shows-unjustified-wages-hirings-administration/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2017/05/MG_0121-768x512.jpg" class="db" alt="Andrew Epperson | Mustang News">
-            <div><p>Andrew Epperson | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-            <h1 class="f3 lh-title">CSU Audit shows unjustified wages and hirings in administration</h1><p>A new California State University (CSU) audit shows Cal Poly disproportionately increased the number of administrators and their wages compared to faculty without justification.
-          </p>
-          <p class="f6 lh-copy mv0">May 1, 2017</p>
-        </div>
-      </div>
-    </a>
-       </article>
-    
-      <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/tenure-density-continues-decrease-state-funding-drops/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="http://mustangnews.net/wp-content/uploads/2017/04/Faculty-768x404.jpg" class="db" alt="Graphic by Aidan McGloin">
-            <div><p>Aidan McGloin | Mustang News</p></div>
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-            <h1 class="f3 lh-title">Tenure density continues to decrease as state funding drops</h1><p>Cal Poly’s paid Full Time Equivalent (FTE) faculty tenure density has decreased by seven percent since 2009, from 66.6 percent to 59.19 percent according to the 2016 Cal Poly Fact Book. 
-          </p>
-          <p class="f6 lh-copy mv0">April 13, 2017</p>
-        </div>
-      </div>
-    </a>
-       </article>
-    
-          <article>
-    <a class="db pv4 ph3 ph0-l no-underline grey dim" href="http://mustangnews.net/byline/aidan-mcgloin/">
-      <div class="flex flex-column flex-row-ns">
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <img src="img/byline.png" class="db" alt="Graphic by Aidan McGloin">
-        </div>
-        <div class="w-100 w-60-ns pl3-ns">
-            <h1 class="f3 lh-title">Mustang News Archives</h1><p>All of my stories from Mustang News
-          </p>
-            <p class="f6 lh-copy mv0">October 11, 2017—Present</p>
-        </div>
-      </div>
-    </a>
-       </article>
-   
+        	</section>
+
+        	<section class="row center">
+               
+		<div class="">
+			<h1 class="no-underline" id="stories"><a class="h1link no-underline dim" href="photos.html">Photos</a></h1>
+                </div>
+                 <article>
+                    </article>
     </section>
-        </div>
-    
-  
+                    <header class="captioncontainer vh-100 dt w-100">
+    <div style="background:url(https://images.fok.al/content/NwWiwVygjWfA?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max) no-repeat right;background-size: cover;" 
+      class="dtc v-mid cover ph3 ph4-m ph5-l "><div class="bottom-left"><p>Title IX Sexual Assault Protest<br>Cal Poly Graduation | June 6, 2018</p></div>
+    </div>
+  </header>
+              
+<br><br>
+<section class="row center">
+                    <h1 class="no-underline" id="stories"><a class="h1link no-underline dim" href="resume.html">Resume</a></h1>
+        <article class="cf ph3 ph5-ns pv5">
+  <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="mb3 mt0 lh-title">Experience</h1>
+  </header>
+  <div class="fn fl-ns w-50-ns">
+      <p class="lh-copy measure mt4 mt0-ns"><b class="org">Digital Democracy-</b>Journalism Fellow, September 2017-Present
+ <p class="lh-copy measure mt4 mt0-ns"><b class="org">Mustang News-</b>Multimedia Reporter, July 2016
+</p>
+  </div>
+</article>
+        
+<article class="cf ph3 ph5-ns pv5">
+  <header class="fn fl-ns w-50-ns pr4-ns">
+    <h1 class="mb3 mt0 lh-title">Skills</h1>
+  </header>
+  <div class="fn fl-ns w-50-ns">
+     <p class="lh-copy measure mt4 mt0-ns"><b class="org">Journalism-</b>Data Journalism, Adobe Premiere, Adobe Lightroom, Adobe Illustrator, Photography, News writing, InDesign, After Effects, Adobe Illustrator</p>
+    <p class="lh-copy measure mt4 mt0-ns"><b class="org">Coding-</b>Web Design, HTML, CSS, JQuery, SEO, Python
+</p>
+  </div>
+</article>
+    </section>
+
+	
+    <section class="row center">
+	  
+          <h1 class="no-underline" id="stories"><a class="h1link no-underline dim" href="multimedia.html">Multimedia</a></h1>
+        <article> <br>
+            
+  <div class="">
+    <div class="aspect-ratio aspect-ratio--7x5">
+        <a data-fancybox="gallery" href="http://mustangnews.net/wp-content/uploads/2018/04/FundingPerStudent-768x574.png">
+      <div style="background-image:url(http://mustangnews.net/wp-content/uploads/2018/04/FundingPerStudent-768x574.png);"
+           class="bg-center cover aspect-ratio--object"></div></a>
+    </div>
+  </div>
+          </article>
+    </section>
+
 <!--Footer-- SVG Icons are from https://simpleicons.org -->
 <footer class="tc-l bg-center cover">
   <div class="w-100 ph3 pv5">
@@ -400,7 +254,7 @@ $('#slider').cycle({});
     </a>
 
     
-              <a class="link white-60 bg-transparent hover-gold inline-flex items-center ma2 tc br2 pa2" href="https://www.linkedin.com/in/aidan-mcgloin-7647b280/" title="LinkedIn">
+    <a class="link white-60 bg-transparent hover-gold inline-flex items-center ma2 tc br2 pa2" href="https://www.linkedin.com/in/aidan-mcgloin-7647b280/" title="LinkedIn">
       <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
       <span class="f6 ml3 pr2">LinkedIn</span>
     </a>  
@@ -427,46 +281,47 @@ $('#slider').cycle({});
     </div>
     </footer>
 <!--end of footer-->
-    </body>
-    <!--the following script controls the responsive navigation-->
-<script>
-	(function($) { // Begin jQuery
-  $(function() { // DOM ready
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      // Close one dropdown when selecting another
-      $('.nav-dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
-    });
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    });
-    // Toggle open and close nav styles on click
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-    // Hamburger to X toggle
-    $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-  }); // end DOM ready
-})(jQuery); // end jQuery
-	</script>
-	<script>
-	var headertext = [];
-var headers = document.querySelectorAll("#miyazaki th"),
-tablerows = document.querySelectorAll("#miyazaki th"),
-tablebody = document.querySelector("#miyazaki tbody");
-for(var i = 0; i < headers.length; i++) {
-	var current = headers[i];
-	headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
-}
-for (var i = 0, row; row = tablebody.rows[i]; i++) {
-	for (var j = 0, col; col = row.cells[j]; j++) {
-		col.setAttribute("data-th", headertext[j]);
-	}
-}
-</script>
+ </body>
 </html>
+	<!--the following script controls the responsive navigation-->
+	<script>
+	   (function($) { // Begin jQuery
+	 $(function() { // DOM ready
+	   // If a link has a dropdown, add sub menu toggle.
+	   $('nav ul li a:not(:only-child)').click(function(e) {
+	     $(this).siblings('.nav-dropdown').toggle();
+	     // Close one dropdown when selecting another
+	     $('.nav-dropdown').not($(this).siblings()).hide();
+	     e.stopPropagation();
+	   });
+	   // Clicking away from dropdown will remove the dropdown class
+	   $('html').click(function() {
+	     $('.nav-dropdown').hide();
+	   });
+	   // Toggle open and close nav styles on click
+	   $('#nav-toggle').click(function() {
+	     $('nav ul').slideToggle();
+	   });
+	   // Hamburger to X toggle
+	   $('#nav-toggle').on('click', function() {
+	     this.classList.toggle('active');
+	   });
+	 }); // end DOM ready
+	})(jQuery); // end jQuery
+	</script> 
+	<script>
+	   var headertext = [];
+	var headers = document.querySelectorAll("#miyazaki th"),
+	tablerows = document.querySelectorAll("#miyazaki th"),
+	tablebody = document.querySelector("#miyazaki tbody");
+	for(var i = 0; i < headers.length; i++) {
+	   var current = headers[i];
+	   headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
+	}
+	for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	   for (var j = 0, col; col = row.cells[j]; j++) {
+	       col.setAttribute("data-th", headertext[j]);
+	   }
+	}
+	</script>
+
