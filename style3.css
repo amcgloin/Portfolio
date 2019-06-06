@@ -262,7 +262,7 @@ body {
 	/*(default background color for the entire page)*/
 	color: #d2d4dd;
 	/*(default font color for the entire page)*/
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Times', sans-serif;
 	/*(default typeface for the entire page)*/
 	font-weight: 300;
 	/*(font thickness)*/
@@ -528,7 +528,7 @@ filter: alpha(opacity=70)
 #alt-caption {
     background-color: #393f4d;
     color: #d2d4dd;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Times', sans-serif;
     font-size: .9em;
     margin-left: auto;
     margin-right: auto;
