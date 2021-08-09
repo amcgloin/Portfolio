@@ -1,11 +1,11 @@
 {
     "manifest_version":2,
-    "name":"New news page",
-    "description":"Will prompt squares from licensed news stories.",
+    "name":"C^2",
+    "description":"Prompts the most recent stories from CalMatters in new tabs",
     "version":"0.1",
     
     "chrome_url_overrides":{
-    "newtab":"newtab.html"
+    "newtab":"extension.html"
 },
 
 "browser_action":{
