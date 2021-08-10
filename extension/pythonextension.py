@@ -1,8 +1,8 @@
-from os import write
-from requests.exceptions import Timeout
-from urllib.parse import quote_plus, urlparse, quote
-import requests
-from bs4 import BeautifulSoup
+#from os import write
+#from requests.exceptions import Timeout
+#from urllib.parse import quote_plus, urlparse, quote
+#import requests
+#from bs4 import BeautifulSoup
 
 #This is a fail-safe to make sure I get responses from my scraping. If I don't open a page or if there is a time-out, I exit and move to the next url
 def fetch_page(url):
