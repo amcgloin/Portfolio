@@ -1,6 +1,4 @@
 from os import write
-from requests.exceptions import Timeout
-from urllib.parse import quote_plus, urlparse, quote
 import requests
 from bs4 import BeautifulSoup
 
