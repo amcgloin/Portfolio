@@ -39,12 +39,18 @@ end="""</section>
 def find_story_info(item):
     headline=item.find("title").get_text()
     link=item.find("link").get_text()
-    photo=str(item.find("description")).split('src="')[1].split("?")[0]
+   # print(item)
+    photo=item.find("thumbnail")['url'].split("?")[0]
+    print(photo)
+    print("############")
+   # photo=item.split('/jpeg" url="')#[1]#.split("?")[0]
+    #print(photo)
+    #photo=str(item.find("description")).split('src="')[1].split("?")[0]
     return(headline,link,photo)
 
 
 def grab_info():
-    page = fetch_page("https://calmatters.org/feed/")
+    page = fetch_page("https://calmatters.org/feed/?partner-feed=aidan")
     if not page: 
         return
     #the "soup" is the result of parsing the page with beautifulsoup's html parser. BeautifulSoup is a web scraping library
