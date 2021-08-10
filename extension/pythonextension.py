@@ -66,7 +66,7 @@ def grab_info():
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
         page=page+new_article_section
     page=page+end
-    with open("extension.html","w") as f:
+    with open("updated_pages.html","w") as f:
         f.write(page)
 
 
