@@ -8,15 +8,8 @@ from bs4 import BeautifulSoup
 def fetch_page(url):
     user_agent = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64)'
     headers = {'User-Agent': user_agent}
-    #if a url is still being troublesome, you can rule it out using this commented-out code
-    #if url == "http://chisme.soyserg.io/issues/data-rules-everything-around-me-issue-4-603969":
-    #    return False
-    try:
-        page = requests.get(url.rstrip(), timeout=10, headers = headers)
-    except Timeout:
-        return False
-    else: 
-        return page
+    page = requests.get(url.rstrip(),headers = headers)
+    return page
 
 head="""
 <html>
@@ -53,7 +46,7 @@ def find_story_info(item):
 
 
 def grab_info():
-    page = fetch_page(("https://calmatters.org/feed/").rstrip())
+    page = fetch_page("https://calmatters.org/feed/")
     if not page: 
         return
     #the "soup" is the result of parsing the page with beautifulsoup's html parser. BeautifulSoup is a web scraping library
