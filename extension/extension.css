@@ -1,9 +1,17 @@
-h3 {
-    font-size: 1em;
-    position: relative;
-    background-color: ##f4bb32;
-    color:#f4bb32;
+    /*color:#f4bb32;
     background-color: #05a0c4;
+rgba(0, 0, 0, .6);
+rgba(0, 0, 0, .9);*/
+
+h3 {
+    font-family: sans-serif;
+    font-size: 1.3vw;
+    position: relative;
+    color:rgba(0, 0, 0, .9);
+    background-color: #f4bb32;
+   /* color:#f4bb32;
+    background-color: #05a0c4;*/
+    padding:5px;
 }
 
 .a{
@@ -90,14 +98,14 @@ h3 {
     padding-right: .5rem;
 }
 
-
+/*
 .f5 {
     font-size: 1rem;
 }
 
 .f6 {
     font-size: .875rem;
-}
+}*/
 
 @media screen and (min-width: 30em) {
     .w-25-ns {
@@ -109,9 +117,9 @@ h3 {
         padding-right: 0;
     }
 
-    .f4-ns {
+  /*  .f4-ns {
         font-size: 1.25rem;
-    }
+    }*/
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
