@@ -25,7 +25,7 @@ jobs:
           if [ -f extension/requirements.txt ]; then pip install -r extension/requirements.txt; fi
     - name: Run the program
       run: |
-        python extension/pythonextension.py
+        python extension/extension.py
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
