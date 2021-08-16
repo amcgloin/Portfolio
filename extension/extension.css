@@ -6,13 +6,12 @@ h3 {
     font-size: 1em;
     font-family: sans-serif;
     position: relative;
-   /* color:rgba(0, 0, 0, .9);*/
-    color:#05a0c4;
+    color:rgba(0, 0, 0, .9);
     background-color:#f4bb32;
     font-family: 'Roboto', sans-serif;
     padding:5px;
    /* border-bottom-color: #05a0c4;*/
-    border-bottom: 2px #05a0c4 solid;
+    border-bottom: 5px #05a0c4 solid;
 }
 
 .a{
