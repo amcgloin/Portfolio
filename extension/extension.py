@@ -27,7 +27,7 @@ head="""
 article_sections=   """<article>
     <div>
     <a href="{link_}">
-      <img style="background-image:url({photo_});"/>
+      <img class="article_photo" style="background-image:url({photo_});"/>
       <h3>{headline_}</h3> </a>
     </div>
 
