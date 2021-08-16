@@ -58,16 +58,17 @@ def grab_info():
         return
     #the "soup" is the result of parsing the page with beautifulsoup's html parser. BeautifulSoup is a web scraping library
     soup = BeautifulSoup(page.content, 'xml')
+    print(soup)
    # print(soup)
-    page=head
+    html=head
     for item in soup.find_all("item"):
        # print(item)
         headline,link,photo=find_story_info(item)
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
-        page=page+new_article_section
-    page=page+end
+        html=html+new_article_section
+    html=html+end
     with open("newtabs.html","w") as f:
-        f.write(page)
+        f.write(html)
 
 
 grab_info()
