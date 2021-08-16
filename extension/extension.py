@@ -24,12 +24,11 @@ head="""
 <section class="cf w-100">
 """
 
-article_sections=   """<article class="fl w-100 w-50-m  w-25-ns">
-    <div class="aspect-ratio aspect-ratio--1x1">
+article_sections=   """<article>
+    <div>
     <a href="{link_}">
-      <img style="background-image:url({photo_});" 
-      class="db bg-center cover aspect-ratio--object" />
-      <h3 class="f4-ns headline">{headline_}</h3> </a>
+      <img style="background-image:url({photo_});"/>
+      <h3>{headline_}</h3> </a>
     </div>
 
   </article>"""
