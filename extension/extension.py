@@ -59,7 +59,7 @@ def grab_info():
    # print(soup)
     html=head
     for item in soup.find_all("item"):
-        print(item)
+     #   print(item)
         headline,link,photo=find_story_info(item)
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
         html=html+new_article_section
