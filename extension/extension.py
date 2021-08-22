@@ -41,9 +41,12 @@ end="""</section>
 def find_story_info(item):
     headline=item.find("title").get_text()
     link=item.find("link").get_text()
-   # print(item)
-    photo=item.find("thumbnail")['url'].split("?")[0]
-    print(photo)
+    print(item)
+    if item.find("thumbnail"):
+        photo=item.find("thumbnail")['url'].split("?")[0]
+    else:
+        return(headline,link,"no photo")
+  #  print(photo)
     print("############")
    # photo=item.split('/jpeg" url="')#[1]#.split("?")[0]
     #print(photo)
@@ -61,6 +64,8 @@ def grab_info():
     for item in soup.find_all("item"):
      #   print(item)
         headline,link,photo=find_story_info(item)
+        if photo == "no photo":
+            continue
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
         html=html+new_article_section
     html=html+end
