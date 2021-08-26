@@ -1,6 +1,7 @@
     /*color:#f4bb32;
     background-color: #05a0c4;
     rgba(0, 0, 0, .9);*/
+/*This code, but no assets, are Copyrighted 2021 @Aidan McGloin, aidancmcgloin@gmail.com*/
 
 h3 {
     font-size: 1em;
@@ -8,7 +9,8 @@ h3 {
     background-color:#f4bb32;
     font-family: 'Roboto', sans-serif;
     padding:5px;
-    border-left: 5px #05a0c4 solid;
+    border:.6px #05a0c4 solid;
+    border-left: 10px #05a0c4 solid;
    /* border-bottom: 5px #05a0c4 solid;*/
     position: absolute;
     bottom: 6%;
@@ -19,7 +21,7 @@ h3 {
 
 div{
     position: relative;
-    padding-bottom: 110%;
+    padding-bottom: 100%;
 }
 
 article{
@@ -36,17 +38,25 @@ article{
     position: absolute;
     width: 100%;
     height: 100%;
-    border:3px #05a0c4 solid;
+   /* border:2px #05a0c4 solid;*/
 }
 
-
 header{
- /*   border-bottom-style:solid;
-    border-bottom-width:3px;
+  /*  border-bottom-style:solid;
+    border-bottom-width:30px;
     border-bottom-color: #05a0c4;*/
     display:block;
     margin-bottom: 2px;
     width:100%;
+}
+
+.linebreak{
+    position: relative;
+    padding-bottom: 2px;
+    border-bottom-style:solid;
+    border-bottom-width:5px;
+    border-bottom-color: #05a0c4;
+    width:485px;
 }
 
 .cf:before, .cf:after {
