@@ -19,7 +19,7 @@ head="""
 </head>
    <body>
 		<header class="bb pv4">
-            <img decoding="async" alt="Mustang News wordmark" src="https://mustangnews.net/wp-content/uploads/2018/10/Mustang_News_logo_white.png" class="i-amphtml-fill-content i-amphtml-replaced-content">
+            <img class="headerphoto" decoding="async" alt="Mustang News wordmark" src="https://mustangnews.net/wp-content/uploads/2018/10/Mustang_News_logo_white.png" class="i-amphtml-fill-content i-amphtml-replaced-content">
 		</header>
 <section class="cf w-100">
 """

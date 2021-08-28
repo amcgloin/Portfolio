@@ -16,8 +16,8 @@ h3 {
     color:white;
     font-family: 'Roboto', sans-serif;
     padding:5px;
+    border-left: 10px white solid;
    /* border:.6px #05a0c4 solid;*.
-    border-left: 10px #05a0c4 solid;
    /* border-bottom: 5px #05a0c4 solid;*/
     position: absolute;
     bottom: 6%;
@@ -54,7 +54,15 @@ header{
     border-bottom-color: #05a0c4;*/
     display:block;
     margin-bottom: 2px;
-    width:100%;
+    width:75vw;
+    padding: 2px;
+}
+
+.headerphoto{
+    background-color: #14c9ad;
+    padding: 5px;
+    width:50vw
+   /* width:100%;*/
 }
 
 .linebreak{

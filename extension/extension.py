@@ -41,13 +41,11 @@ end="""</section>
 def find_story_info(item):
     headline=item.find("title").get_text()
     link=item.find("link").get_text()
-    print(item)
     if item.find("thumbnail"):
         photo=item.find("thumbnail")['url'].split("?")[0]
     else:
         return(headline,link,"no photo")
   #  print(photo)
-    print("############")
    # photo=item.split('/jpeg" url="')#[1]#.split("?")[0]
     #print(photo)
     #photo=str(item.find("description")).split('src="')[1].split("?")[0]
@@ -61,6 +59,7 @@ def grab_info():
     soup = BeautifulSoup(page.content, 'xml')
    # print(soup)
     html=head
+    count=10
     for item in soup.find_all("item"):
      #   print(item)
         headline,link,photo=find_story_info(item)
@@ -68,6 +67,9 @@ def grab_info():
             continue
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
         html=html+new_article_section
+        if count==10:
+            print(new_article_section)
+            count=11
     html=html+end
     with open("newtabs.html","w") as f:
         f.write(html)
