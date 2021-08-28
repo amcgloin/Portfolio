@@ -73,5 +73,7 @@ def grab_info():
     html=html+end
     with open("newtabs.html","w") as f:
         f.write(html)
+    with open("testing.html","w") as f:
+        f.write(html)
 
 grab_info()
