@@ -71,9 +71,7 @@ def grab_info():
             print(new_article_section)
             count=11
     html=html+end
-    with open("newtabs.html","w") as f:
-        f.write(html)
-    with open("testing.html","w") as f:
+    with open("extension/newtabs.html","w") as f:
         f.write(html)
 
 grab_info()
