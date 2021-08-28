@@ -26,13 +26,8 @@ jobs:
     - name: Run the program
       run: |
         python extension/extension.py
- #   - name: Commit & Push changes
-  #    uses: actions-js/push@master
-   #   with:
-    #    github_token: ${{ secrets.GITHUB_TOKEN }}
-     #   branch: master
-    - name: Commit report
-      run: |
-        git config --global user.name 'Aidan'
-        git commit -am "Automated update"
-        git push
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
