@@ -26,7 +26,7 @@ head="""
 
 article_sections=   """<article>
     <div>
-    <a href="{link_}">
+    <a href="{link_}" target="_top">
       <img class="article_photo" style="background-image:url({photo_});"/>
       <h3>{headline_}</h3> </a>
     </div>
@@ -72,6 +72,7 @@ def grab_info():
             count=11
     html=html+end
     with open("extension/newtabs.html","w") as f:
+    #with open("newtabs.html","w") as f:
         f.write(html)
 
 grab_info()
