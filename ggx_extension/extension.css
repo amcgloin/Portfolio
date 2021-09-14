@@ -28,7 +28,7 @@ h3 {
 
 div{
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 130%;
 }
 
 article{
@@ -56,6 +56,7 @@ header{
     margin-bottom: 2px;
     width:75vw;
     padding: 2px;
+    padding-left: -100px;
 }
 
 .headerphoto{
@@ -89,7 +90,7 @@ header{
 
 @media screen and (min-width: 30em) {
     article {
-        width: 25%;
+        width: 20%;
     }
 }
 
