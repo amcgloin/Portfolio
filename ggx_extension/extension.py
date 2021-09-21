@@ -73,7 +73,7 @@ def grab_info():
         new_article_section=article_sections.format(link_=link,photo_=photo,headline_=headline)
         html=html+new_article_section
     html=html+end
-    with open("newtabs.html","w") as f:
+    with open("ggx_extension/newtabs.html","w") as f:
         f.write(html)
 
 grab_info()
