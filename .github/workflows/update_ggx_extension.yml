@@ -2,8 +2,8 @@ name: Update GGX Extension from RSS
 
 on: 
   workflow_dispatch:
-  schedule:
-  - cron: "24 13,17,19,23 * * *"
+#  schedule:
+ # - cron: "24 13,17,19,23 * * *"
 
 jobs:
   run_extension_update:
