@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pages</title>
+        <meta name="description" content="For readers.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome to the Pages Experiment</h1>
+        <p>Everyone should be able to create their own sites using the instructions below. Everyone should also be able to view everyone else's pages using the index, also below.</p>
+        <p>I designed this webpage because I was unhappy with current book discussion sites. Goodreads is clunky and focuses too much on reading goals. Their webpage draws your eye away from reading reviews, and draws it toward buttons. Instagram is limited just by being a visual-centric site.</p><p>This site focuses only on reviews. It has no other function.</p>
+        <h2>How to create your own page</h2>
+        
+        <?php
+
+// Write your code below:
+  function countdown() 
+{
+  echo "4, 3, 2, 1, ";
+  return "blastoff!";
+}
+
+countdown();
+        
+        <p>You will need:</p>
+        <ul>
+            <li>A username (this will be your personal URL)</li>
+            <li>A five-digit (or more) password</li>
+        </ul>
+        <p>Open up your terminal on your computer, and replace the bolded bits of this message with your username and password. If your username is "Isabell Adams" and your password is "PASSWORD," you would send:</p>
+        <ul><li><i>curl -X POST -H 'Content-type: application/json' --data '{"text":"@new_account_creation | Username: <b>Isabell Adams</b> | Password: <b>PASSWORD</b>"}' https://hooks.slack.com/services/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</i>
+            </li></ul>
+        <p>That's all it takes! It may look pretty complicated at first. But the only parts you have to worry about are the bolded bits. Be sure to include the bits that announce the data ("Action:," Username:,etc," and please remember to include the |.</p>
+        <p>I store no information about you with the sole exception of your username and your password.</p>
+        <p>If you want to know what the rest of the coding means, it directs your computer to send that message to my computer, with Slack as an intermediary.</p>
+        <h2>How to update your page</h2>
+        <h3>New posts</h3>
+        <p>To post a new book review, open up your terminal. Write your username, your password, the book title, the author, and your review, then plug them in where the following message is bolded.</p>
+        <ul><li><i>curl -X POST -H 'Content-type: application/json' --data '{"text":"Action: post new review | Username: <b>Isabell Adams</b> | Password: <b>PASSWORD</b> | Book: <b>Farhenheit 451</b> | Author: <b>Ray Bradbury</b> | Review: <b>A thrilling book about...</b>"}' https://hooks.slack.com/services/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</i></li></ul>
+        <p>That's all it takes to post a new review! Make the review as long as you need.</p>
+        <h3>Editing old posts</h3>
+        <p>It's possible you mispelled a word! It is easy to edit those mistakes out. To edit a review, post exactly the same message as you do to post the review, but with the corrected review.</p>
+        <h3>Bio</h3>
+        <p>If you want to add a bio, write it up first, including the header description, and then post it through the terminal like this:</p>
+        <ul><li><i>curl -X POST -H 'Content-type: application/json' --data '{"text":"Action: add bio | Username: <b>Isabell Adams</b> | Password: <b>PASSWORD</b> Header: <b>A reader since 2000</b> | Bio: <b>Just a small town girl. Livin in a lonely world.</b>"}' https://hooks.slack.com/services/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
+</i></li></ul>
+        <p>You can change your bio any time by resubmitting that command with the new bio in place. Try it out!</p>
+        <h3>Contact information</h3>
+        <p>If you want to add contact information to your page, so people can find you elsewhere, you can add it to your footer. Use the following format from your terminal:</p>
+        <ul><li>curl -X POST -H 'Content-type: application/json' --data '{"text":"Action: add contact info | Goodreads: <b>(your goodreads link here)</b> | Instagram: <b>(your Instagram handle here)</b> | Twitter: <b>(your Twitter link here)</b> | Email: <b>(your email here)</b>"}' https://hooks.slack.com/services/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</li></ul>
+        <p>If you only want to add your Goodreads, or just your Instagram, you can leave the other values empty. As an example:</p>
+        <ul><li><i>curl -X POST -H 'Content-type: application/json' --data '{"text":"Action: <b>add contact info</b> | Goodreads: <b>(your goodreads link here)</b> | Email: <b>(your email here)</b>"}' https://hooks.slack.com/services/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</i></li></ul>
+        <p>You can also put in where to reach you in your bio!</p>
+        <h2>Reach out!</h2>
+        <p>I'm just a guy who made this out of passion, so let me know if you have any questions. You can email me at pagesexperiment@gmail.com. Or, you can message me using your terminal.<br><br><b>-Aidan</b></p>
+        <h1>Index</h1>
+    <h3>Members</h3>
+        <h4><a href="aidan.html">Aidan</a></h4>
+        </body>
+</html>
