@@ -1,26 +1,35 @@
 import csv
+from prompt_toolkit import prompt
 
-username="felix"
-password="montgomery"
+print("Hello and thank you for starting a Pages account! We're glad to have you join us.")
+username = prompt('To start, what do you want your username to be? This will also be your url. ')
+print("")
+print('Your username is %s' % username)
+print("")
 
 def check(username):
     with open("password.csv","r") as f:
         for row in csv.reader(f):
             if row[0].lower()==username.lower():
-                return("already exists")
+                print("That username is already taken. Please try another.")
+                exit()
+
+check(username)
+
+password=prompt("What is your new password? ")
+print("")
+print("Your password is %s"%password+". Be sure to save this!")
+print("")
 
 def add_username(username,password):
     if check(username)=="already exists":
-        print("already exists")
         return
     with open("password.csv","a") as f:
         newrow=[username,password]
         writer=csv.writer(f)
         writer.writerow(newrow)
 
-
-
-#add_username(username,password)
+add_username(username,password)
 
 template="""<!DOCTYPE html>
 <html>
@@ -49,4 +58,4 @@ def generate_user_page(username):
     with open(url,"w") as out:
         out.write(page)
 
-#generate_user_page(username)
+generate_user_page(username)
