@@ -1,40 +1,54 @@
+from datetime import datetime
+from prompt_toolkit import prompt
 
-import csv
+def archives(url,f):
+    now=datetime.now()
+    now=now.strftime("%m_%d_%Y")
+    archive="archive/"+now+".html"
+    f=str(f)
+    with open(archive,"w") as out:
+        out.write(f)
 
-def review_password(username,password):
-    with open("password.csv","r") as f:
-        for row in csv.reader(f):
-            if row[0].lower()==username.lower():
-                if row[1]==password:
-                    return("passed")
-                else:
-                    return("wrong password")
-
-def remove_review(book,lines):
-    title="<h3><i>"+book
-    review=lines.split(title)[1].split("<h3><i>")[0]
-    review=title+review
-    lines=lines.replace(review,"")
-    return(lines)
-
-
-def add_review(username,password,book,author,review):
-    if review_password(username,password)=="wrong password":
-        print("wrong password")
+def add_review():
+    print("Hello!")
+    print("")
+    print("Let's add a review.")
+    print("")
+    print("Note: if you want some of your text to be italicized, bookmark that text with <i> and </i>. If you want it bolded, bookend it with <b> and </b>. ")
+    print("")
+    print("Exit anytime by responding with 'cancel'")
+    print("")
+    url ="index.html"
+    book=prompt("What book did you read? ")
+    print("")
+    author=prompt("Who's the author? ")
+    print("")
+    header=prompt("Optional: If you want your  review to go by a different title than the book's title, enter it here. If you don't, you can just press enter: ")
+    print("")
+    if header.lower()=="cancel":
         return
-    url=username+".html"
-   # print(url)
+    review=prompt("Copy your review here (note: you must add ""/n"" between paragraphs):  ")
+    review=review.replace("/n","<br><br>")
+    if review.lower()=="cancel":
+        return
+    jumplink="<h5><a href='#"+book+"'><i>"+book+"</i> by "+author+"</a></h5>"
     with open(url,"r") as f, open("edited.html","w") as out:
         lines=f.read()
-       # print(lines.split("webpage because")[0])
-        title="<h3><i>"+book+"</i> by "+author+"</h3>"
-        if title in lines:
-            print("Review already in")
-            lines=remove_review(book,lines)
-        edited=lines.split("<h2>Reviews</h2>")[0]+"<h2>Reviews</h2>"+title+"<p>"+review+"</p>"+lines.split("<h2>Reviews</h2>")[1]
-        print(lines.split("<h2>Reviews</h2>")[0])
+        archives(url,lines)
+        print(lines.split("<h5>")[0])
+        print("#######")
+        print(lines.split("<h5>")[1])
+        lines=lines.split("<h4>Jump to a review</h4>")[0]+jumplink+lines.split("<h4>Jump to a review</h4>")[1]
+       # lines=lines.split("<h5>")[0]+jumplink+lines.split("</h5>")[1]
+        if header=="":
+            title="<h2 id='"+book+"'><i>"+book+"</i> by "+author+"</h2>"
+        if header!="":
+            title="<h2 id='"+book+"'>"+header+"</h2><h3><i>"+book+"</i> by "+author+"</h3>"
+        edited=lines.split("<h1>Reviews</h1>")[0]+"<h1>Reviews</h1>"+title+"<p>"+review+"</p>"+lines.split("<h1>Reviews</h1>")[1]
         out.write(edited)
 
-#os.rename("edited.html",url)
+os.rename("edited.html",url)
 
-#add_review("aidan","test","If This Isn't Nice, What Is?","Kurt Vonnegut","sdfdsfsd")
+add_review()
+
+
