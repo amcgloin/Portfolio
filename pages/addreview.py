@@ -44,8 +44,6 @@ def add_review():
         edited=lines.split("<h1>Reviews</h1>")[0]+"<h1>Reviews</h1>"+title+"<p>"+review+"</p>"+lines.split("<h1>Reviews</h1>")[1]
         out.write(edited)
 
-#add_review()
+add_review()
 
-#os.rename("edited.html","index.html")
-
-print("something".replace("nothing","IDEKMAN"))
+os.rename("edited.html","index.html")
