@@ -1,12 +1,21 @@
 from datetime import datetime
 import os
 
-def archives(f):
+def archives(lines):
     now=datetime.now()
     now=now.strftime("%m_%d_%Y")
     archive="archive/"+now+".html"
     with open(archive,"w") as out:
-        out.write(f)
+        out.write(lines)
+
+def compile():
+    review=input("Paste your first paragraph here. Press enter when you're done with the paragraph. If you are done with the whole review, press enter twice. ")+"<br><br>"
+    while True:
+        user_input=input("Next paragraph: ")
+        review=review+user_input+"<br><br>"
+        if user_input =="":
+            break
+    return(review)
 
 def add_review():
     print("Hello!")
@@ -26,15 +35,14 @@ def add_review():
     if header.lower()=="cancel":
         return
     print("Note: you must add '/n' between paragraphs.")
-    review=input("Copy your review here: ")
-    review=review.replace("/n","<br><br>")
+    review=compile()
     review.replace(book,"<i>"+book+"</i>")
     if review.lower()=="cancel":
         return
     jumplink="<h5><a href='#"+book+"'><i>"+book+"</i> by "+author+"</a></h5>"
     with open("index.html","r") as f, open("edited.html","w") as out:
         lines=f.read()
-        archives(f)
+        archives(lines)
         lines=lines.split("<h4>Jump to a review</h4>")[0]+"<h4>Jump to a review</h4>"+jumplink+lines.split("<h4>Jump to a review</h4>")[1]
        # lines=lines.split("<h5>")[0]+jumplink+lines.split("</h5>")[1]
         if header=="":
@@ -47,3 +55,4 @@ def add_review():
 add_review()
 
 os.rename("edited.html","index.html")
+
