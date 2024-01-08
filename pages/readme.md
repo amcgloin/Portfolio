@@ -14,4 +14,9 @@
 <h3>Make the site</h3>
 <p>Run the first script using "python3 start.py". This script will ask you some questions, and you just have to answer them. To add a bio, run "python3 bio.py." To add a review, run "python3 addreview.py". I recommend having your reviews written ahead of time, but you can also type them directly into the </p>
 <p>If you want to remove a review, run "python3 removereview.py". All versions of this page are archived whenever you run the script. You can find the archives in the archive folder. If you want to change your bio, just run the bio.py script again.</p>
-<p>You can toy around with the CSS file however you want.</p>
+<p>You can toy around with the CSS file (which determines the site's style/font/design) however you want.</p>
+<h3>Host the site</h3>
+<p>The last steps are to host the website. Upload your code on GitHub. Then register your url: I like to use Namecheap. The annual costs for Namecheap is typically $13, but it depends on the url you choose. After you register your url on namecheap, follow the directions on Namecheap's guide and GitHub's Pages to direct the url to your code. This is easy—but the documentation might change, so it's best to refer to them rather than me for this step.</p>
+<h3>Post reviews!</h3>
+<p>Your site is now live! You can add reviews whenever you want! You just need to upload your edited files to GitHub after you add or remove reviews.</p>
+<p>If you have any suggestions to improve my site's functions, please reach out!</p>
