@@ -5,6 +5,7 @@
 <p>I wrote Python scripts that, when you run them, turn your text into a properly structured book review website. I did this because, well, I thought it would make it easier for me to publish longer reviews than what I had on existing social media sites. I'm publishing it in case other people want to publish longer reviews as well. </p>
 <p>You don't need to learn Python to use the scripts. It will prompt you with all of your inputs. All you do is open up your Terminal application, run the program, then copy and paste your text. To host the website, you will need a GitHub account (free). To make sure other people see the website, you will need to buy the url. That costs $13 a year. I like to use <a href="namecheap.com">Namecheap.</a></p>
 <h3>To start</h3>
+<p>You will need to install Python first. to do so, just enter "pip3 install python3" in your terminal</p>
 <p>Download the Python (.py) and CSS (.css) files in this folder. You can ignore the HTML files—that's the type of website the code generates. The Python files produce the HTML, and the CSS files format them. You can mess around with either if you want, but you won't need to.</p>
 <h3>Execute</h3>
 <p>Create the folder on your computer that you want to store this project in. Its name doesn't matter.</p>
