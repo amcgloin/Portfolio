@@ -5,7 +5,7 @@ chardet==4.0.0
 idna==3.7
 lxml==4.6.3
 more-itertools==8.7.0
-numpy==1.20.2
+numpy==1.22.0
 oauthlib==3.1.0
 PySocks==1.7.1
 pytz==2021.1
